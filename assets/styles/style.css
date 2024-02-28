@@ -86,6 +86,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  flex-grow: initial;
   font-weight: 200;
 }
 
@@ -97,7 +98,7 @@ header {
 header.navbar-container {
   width: 100%;
   max-width: 1500px;
-  padding-block: 1rem;
+  padding-block: 0.6rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-around;
@@ -223,6 +224,17 @@ footer .social-media li a:hover {
 }
 
 /*Landing Page*/
+
+.landing-page{
+  flex: 1;
+}
+
+.landing-page .content-container{
+  display: flex;
+  flex-direction: column;
+  padding-block: 3rem;
+}
+
 .landing-page .content-main {
   flex: 1;
   display: flex;
@@ -232,7 +244,7 @@ footer .social-media li a:hover {
 .landing-page .content-main .content-description {
   flex: 1 1;
   text-align: justify;
-  padding-right: 4rem;
+  padding-right: 6rem;
 }
 
 .landing-page .content-main .content-description .title {
@@ -315,7 +327,7 @@ input {
 }
 
 /*Occasion Pages Section*/
-main {
+.other-main {
   padding: 3rem;
   display: flex;
   flex: 1.5;
